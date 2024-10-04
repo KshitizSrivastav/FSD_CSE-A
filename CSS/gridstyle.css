@@ -1,0 +1,19 @@
+.container{
+    display: grid;
+    height: 400px;
+    border: 2px solid red;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.row1{
+    background-color: aquamarine;
+}
+
+.row2{
+    background-color: burlywood;
+}
+
+.row3{
+    background-color: slategrey;
+
+}
