@@ -1,24 +1,53 @@
-body{
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
     align-items: center;
+    background-color: rgb(236, 255, 127);
 }
-#container{
-    border: 2px solid black;
-    padding: 300px;
-    background-color: blueviolet;
+
+#imageContainer {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
-#container button{
-    padding: 10px 30px 10px 30px;
-    font-size: 20px;
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0 0 3px #FFFFFF;
+    font-weight: bold;
 }
-#container textarea{
-    width: 300px;
-    height: 70px;
-    font-size: 17px;
-    margin: 10px;
+
+.image-item {
+    border: black 3px solid;
+}
+
+img {
+    width: 150px; 
+    height: auto; 
+}
+
+#inputContainer {
+    display: none;
+    text-align: center;
+}
+
+button {
+    background-color: #707372; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition-duration: 0.4s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #6e756f; /* Darker green on hover */
 }

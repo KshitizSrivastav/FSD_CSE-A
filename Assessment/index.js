@@ -1,29 +1,37 @@
-const button = document.getElementById("btn");
-const container = document.getElementById("container");
+document.getElementById('startButton').addEventListener('click', function() {
+    document.getElementById('startButton').style.display = 'none';
+    document.getElementById('inputContainer').style.display = 'block';
+});
 
-function displayBulb(){
-    const textarea = document.getElementsByTagName("textarea");
-    const bulbs = textarea[0].value
-    console.log(bulbs);
-    for(let i=0;i<bulbs;i++){
-        const bulb = document.createElement("img");
-        const check = document.createElement("input");
-        check.type="checkbox";
-        console.log(check);
+document.getElementById('generateImages').addEventListener('click', function() {
+    const count = parseInt(document.getElementById('imageCount').value);
+    const container = document.getElementById('imageContainer');
+    
+    container.innerHTML = '';
+    document.getElementById('inputContainer').style.display = 'none';
+
+    for (let i = 0; i < count; i++) {
+        const imageItem = document.createElement('div');
+        imageItem.className = 'image-item';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+
+        const img = document.createElement('img');
+        img.src = './image.png';
+        img.alt = 'Image ' + (i + 1);
+
+        checkbox.addEventListener('change', function() {
+            if (checkbox.checked) {
+                img.src = './q.png';
+            } else {
+                img.src = './image.png';
+            }
+        });
+
+        imageItem.appendChild(checkbox);
+        imageItem.appendChild(img);
         
-        bulb.src = "Light_Bulb_PNG_Clip_Art-2102.png";
-        bulb.setAttribute("height","150px");
-        bulb.setAttribute("width","75px");
-        container.appendChild(check);
-        container.appendChild(bulb);
+        container.appendChild(imageItem);
     }
-}
-
-function quantity(){
-    container.innerHTML = "<textarea name='' id='textarea' placeholder='Enter number of bulbs'></textarea>";
-    const submit = document.createElement("button");
-    submit.innerHTML = "Submit";
-    container.appendChild(submit);
-    submit.addEventListener("click",displayBulb);
-}
-button.addEventListener("click",quantity);
+});
