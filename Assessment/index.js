@@ -11,7 +11,7 @@ function displayBulb(){
         check.type="checkbox";
         console.log(check);
         
-        bulb.src = "https://pics.clipartpng.com/Light_Bulb_PNG_Clip_Art-2102.png";
+        bulb.src = "Light_Bulb_PNG_Clip_Art-2102.png";
         bulb.setAttribute("height","150px");
         bulb.setAttribute("width","75px");
         container.appendChild(check);
