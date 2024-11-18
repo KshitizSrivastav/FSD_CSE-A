@@ -20,10 +20,6 @@ function App() {
       <Student college="ABES Engineering College"
       pic={<img src={logo} height={200} width={200} />}
       name="Amit" roll="456" branch="CSE-AIML"/>
-
-     <Student college="ABES Engineering College"
-      pic={<img src={logo} height={200} width={200} />}
-      name="Arun" roll="789" branch="CS"/>
     </div>
     </div>
   )
