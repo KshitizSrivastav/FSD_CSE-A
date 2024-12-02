@@ -2,6 +2,7 @@ import React from 'react'
 import Student from './Student';
 import logo from './abeslogo.jpg';
 import StudentState from './StudentState';
+import ImageManipulation from './ImageManipulation';
 
 function App() {
   // let a=12;
@@ -50,7 +51,7 @@ function App() {
   //)
   return (
     <div>
-      <StudentState/>
+      <ImageManipulation/>
     </div>
   )
 }
