@@ -8,3 +8,9 @@ fsp.then(()=>{
     console.log("Done");
 })
 
+async function readFileAsync(){
+    const data=await promise.readFile('data.txt');
+    console.log(data.toString());
+}
+
+readFileAsync();
