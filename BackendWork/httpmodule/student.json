@@ -1,0 +1,14 @@
+[
+    {
+        "name":"Kshitiz",
+        "roll":1234,
+        "branch":"CSE",
+        "college":"ABES Engineering college"
+    },
+    {
+        "name":"Ram",
+        "roll":5678,
+        "branch":"CS",
+        "college":"ABES Engineering college"
+    }
+]
