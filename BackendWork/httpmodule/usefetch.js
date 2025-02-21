@@ -1,5 +1,5 @@
 const http = require('http');
-const PORT = 2527;
+const PORT = 2526;
 const server = http.createServer(async (req,res)=>{
     res.setHeader('Content-Type','text/html');
     const data = await fetch("https://fakestoreapi.com/products");
