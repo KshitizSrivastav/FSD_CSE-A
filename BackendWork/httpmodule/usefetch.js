@@ -14,8 +14,19 @@ const server = http.createServer(async (req,res)=>{
         </head>
         <body>
             <div>
-                <img src=${jsonData[0].image} height = 200px width = 200px>
-                ${jsonData[0].category}
+                ${
+                    jsonData.map(ele =>{
+                        return(
+                            `<div style="border:2px solid black">
+                            <div style="text-align:center"><h5>${ele.id}</h5></div>
+                            <div style="text-align:center"><img src=${ele.image} height= 100px width=100px /></div>
+                            <div style="text-align:center"><h4>${ele.category}</h4></div>
+                            <div style="text-align:center"><p>${ele.description}</p></div>
+                            <div style="text-align:center"><b>Rs. ${ele.price}</b></div>
+                            </div>`
+                        )
+                    })
+                }
             </div>
         </body>
     </html>
