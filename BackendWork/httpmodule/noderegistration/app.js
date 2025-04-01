@@ -1,6 +1,6 @@
 const http = require('http');
 const fs = require('fs').promises;
-const port = 7070;
+const port = 7071;
 
 const server = http.createServer((req, res) => {
     res.setHeader('Access-Control-Allow-Origin','*');
@@ -49,7 +49,7 @@ const server = http.createServer((req, res) => {
             const result = arr.find(ele => ele.email == email && ele.password == password);
             if (result) {
                 res.setHeader('Content-Type', 'application/json');
-                res.end(JSON.stringify({ "message": "Login Successful" }));
+                res.end(JSON.stringify({ "message": "success" }));
             } else {
                 res.setHeader('Content-Type', 'application/json');
                 res.end(JSON.stringify({ "message": "Invalid Credentials" }));

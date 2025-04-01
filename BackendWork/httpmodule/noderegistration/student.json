@@ -8,5 +8,15 @@
     "name": "Amit",
     "email": "amit@gmail.com",
     "password": "3456"
+  },
+  {
+    "name": "Aman",
+    "email": "aman@gmail.com",
+    "password": "1234"
+  },
+  {
+    "name": "Jalaj",
+    "email": "js@gmail.com",
+    "password": "5678"
   }
 ]
